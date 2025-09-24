@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西村 友海 (Tomoumi NISHIMURA) - ポートフォリオ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background-color: #f8f9fa; }
+        .section-title { border-bottom: 3px solid #1E3A8A; display: flex; align-items: center; gap: 0.75rem; color: #1E3A8A; }
+        .card { background-color: white; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); transition: all 0.3s ease; border: 1px solid #e5e7eb; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); border-color: #6366F1; }
+        .nav-link { transition: color 0.2s; }
+        .lang-switch { cursor: pointer; background: #e5e7eb; border-radius: 9999px; padding: 4px; display: flex; position: relative; width: 80px; }
+        .lang-switch-slider { position: absolute; top: 4px; background: white; border-radius: 9999px; width: 40px; height: 24px; transition: transform 0.2s ease-in-out; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); }
+        .lang-switch.en .lang-switch-slider { transform: translateX(100%); }
+        .lang-switch span { width: 50%; text-align: center; z-index: 1; font-size: 12px; font-weight: 600; color: #4b5563; }
+        .scroll-reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+        #back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: #1E3A8A; color: white; width: 40px; height: 40px; border-radius: 50%; display: none; align-items: center; justify-content: center; cursor: pointer; opacity: 0.7; transition: opacity 0.3s, visibility 0.3s; z-index: 100; }
+        #back-to-top:hover { opacity: 1; }
+        .category-tag { font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 9999px; margin-right: 0.5rem; }
+        .category-paper { background-color: #DBEAFE; color: #1E40AF; }
+        .category-book { background-color: #D1FAE5; color: #065F46; }
+        .category-presentation { background-color: #FEF3C7; color: #92400E; }
+        .category-misc { background-color: #E9D5FF; color: #5B21B6; }
+        .major-star { color: #FBBF24; margin-right: 0.5rem; }
+        .toggle-switch { width: 44px; height: 24px; background-color: #ccc; border-radius: 9999px; position: relative; transition: background-color 0.2s; cursor: pointer; }
+        .toggle-switch-circle { content: ''; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; background-color: white; border-radius: 50%; transition: transform 0.2s; }
+        .toggle-switch.active { background-color: #4F46E5; }
+        .toggle-switch.active .toggle-switch-circle { transform: translateX(20px); }
+        .publication-link { text-decoration: none; color: inherit; }
+        .publication-link:hover .lang-content { text-decoration: underline; color: #4338CA; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-lg shadow-md z-50">
+        <div class="container mx-auto px-4 sm:px-6 md:px-10 max-w-5xl">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex-1 flex justify-center items-center space-x-4 md:space-x-8">
+                    <a href="#profile-wrapper" class="nav-link text-gray-600 hover:text-indigo-600 font-medium text-sm md:text-base" data-lang-ja="プロフィール" data-lang-en="Profile"></a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-indigo-600 font-medium text-sm md:text-base" data-lang-ja="経歴" data-lang-en="Experience"></a>
+                    <a href="#social-contributions" class="nav-link text-gray-600 hover:text-indigo-600 font-medium text-sm md:text-base" data-lang-ja="社会貢献" data-lang-en="Contributions"></a>
+                    <a href="#publications" class="nav-link text-gray-600 hover:text-indigo-600 font-medium text-sm md:text-base" data-lang-ja="研究業績" data-lang-en="Publications"></a>
+                </div>
+                <div id="lang-toggle" class="lang-switch">
+                    <div class="lang-switch-slider"></div>
+                    <span>JA</span>
+                    <span>EN</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-10 max-w-5xl">
+
+        <header class="text-center mb-12 pt-8 scroll-reveal">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-900" data-lang-ja="西村 友海" data-lang-en="Tomoumi NISHIMURA"></h1>
+            <p class="text-xl md:text-2xl text-gray-600 mt-2" data-lang-ja="ニシムラ トモウミ" data-lang-en="Tomoumi NISHIMURA"></p>
+            <div class="mt-4 text-lg text-indigo-700">
+                <p data-lang-ja="九州大学 大学院法学研究院 准教授" data-lang-en="Associate Professor, Faculty of Law, Kyushu University"></p>
+            </div>
+        </header>
+
+        <main class="bg-white p-6 sm:p-8 md:p-12 rounded-xl shadow-xl">
+            <section id="profile-wrapper">
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 scroll-reveal">
+                    <section id="interests">
+                        <h2 class="text-2xl font-bold pb-2 mb-4 section-title">
+                            <i class="fa-solid fa-bookmark text-xl"></i>
+                            <span data-lang-ja="研究キーワード" data-lang-en="Research Keywords"></span>
+                        </h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="法哲学" data-lang-en="Philosophy of Law"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="議論の理論" data-lang-en="Argumentation Theory"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="法的推論" data-lang-en="Legal Reasoning"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="リーガルテック" data-lang-en="Legal Tech"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="計算論的法学" data-lang-en="Computational Law"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="ELSI" data-lang-en="ELSI"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="スマートコントラクト" data-lang-en="Smart Contracts"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="法情報学" data-lang-en="Legal Informatics"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="システム開発契約" data-lang-en="System Development Contracts"></span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="人工知能と法" data-lang-en="AI and Law"></span>
+                        </div>
+                    </section>
+                    <section id="skills">
+                        <h2 class="text-2xl font-bold pb-2 mb-4 section-title">
+                            <i class="fa-solid fa-code text-xl"></i>
+                            <span data-lang-ja="技術スキル" data-lang-en="Technical Skills"></span>
+                        </h2>
+                        <div class="flex flex-wrap gap-2">
+                             <span class="bg-sky-100 text-sky-800 px-3 py-1 text-sm rounded-full font-medium">Scala</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium">Java</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium">JavaScript</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium">Objective-C</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium">Swift</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium">Python</span>
+                             <span class="bg-gray-100 text-gray-800 px-3 py-1 text-sm rounded-full font-medium" data-lang-ja="ソフトウェア工学" data-lang-en="Software Engineering"></span>
+                        </div>
+                    </section>
+                </div>
+                
+                <section id="profile" class="mb-12 scroll-reveal">
+                    <h2 class="text-3xl font-bold pb-2 mb-6 section-title">
+                        <i class="fa-solid fa-user-tie text-2xl"></i>
+                        <span data-lang-ja="プロフィール" data-lang-en="Profile"></span>
+                    </h2>
+                    <div class="space-y-4 text-base leading-relaxed text-gray-700" data-lang-ja='<p>法学の基礎理論を研究しています。具体的には、「議論」や「論証」といった概念を中心に据え、論理学の哲学や計算機科学の知見を参照しつつ、法解釈や法的判断といったものの性質や特徴を明らかにすることを試みています。 また、その成果を応用して、法学と他分野の知見とを（それぞれの分野の知見の相違を適切に踏まえつつ、）接続する方法を模索する、といったことも試みています。</p><p>小学校の図書館で「マイコンBASICマガジン」に出会って以来、プログラムを書くことが趣味です。好きな言語はScalaですが、ちょっと触ったことがある程度を含めれば大抵の言語は書いたことがあります。学生時代は学業の傍らのべ3社でエンジニアとして勤務してきましたので、Java, Scala, JavaScript, Obj-C, Swift, Pythonあたりは業務での使用経験もあります。ソフトウェア工学やプログラミング言語論、型システムなどにも興味関心があり、そうした知見を生かした研究テーマも模索しています。実定法の勉強も好きなので、システム開発契約についても研究しています。</p>' data-lang-en='<p>My research focuses is on the foundational theories of law. Specifically, I examine the nature and characteristics of legal interpretation and judgment by centering on concepts such as "proof," "argument," and "argumentation," with reference to insights from the philosophy of logic and computer science. I also explore ways to apply these findings to connect legal studies with other fields, appropriately considering the differences in their respective knowledge.</p><p>Ever since encountering "Mycom BASIC Magazine" in my elementary school library, programming has been my hobby. While Scala is my favorite language, I have experience with most languages to some extent. During my student years, I worked as an engineer at three companies, gaining professional experience with Java, Scala, JavaScript, Obj-C, Swift, and Python. I am also interested in software engineering, programming language theory, and type systems, and I am exploring research themes that utilize this knowledge. I also enjoy studying positive law and am researching system development contracts.</p>'>
+                    </div>
+                    <div class="mt-8 flex flex-wrap gap-3 items-center justify-center md:justify-start">
+                        <a href="mailto:t-nishimura@law.kyushu-u.ac.jp" class="inline-flex items-center bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors duration-300 shadow-md"><i class="fa-solid fa-envelope mr-2"></i>Email</a>
+                        <a href="https://www.law.kyushu-u.ac.jp/general/staff/nishimura_tomoumi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 shadow-md"><i class="fa-solid fa-graduation-cap mr-2"></i><span data-lang-ja="大学教員紹介" data-lang-en="Faculty Profile"></span></a>
+                        <a href="https://researchmap.jp/tnishimura" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 shadow-md"><i class="fa-solid fa-map-location-dot mr-2"></i>researchmap</a>
+                        <a href="https://orcid.org/0000-0002-1066-0913" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 shadow-md"><i class="fa-brands fa-orcid mr-2"></i>ORCID</a>
+                        <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201801021260539049" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-700 text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors duration-300 shadow-md"><i class="fa-solid fa-earth-asia mr-2"></i>J-GLOBAL</a>
+                    </div>
+                </section>
+            </section>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-12 scroll-reveal">
+                    <section id="experience">
+                        <h2 class="text-3xl font-bold pb-2 mb-6 section-title"><i class="fa-solid fa-briefcase text-2xl"></i><span data-lang-ja="経歴" data-lang-en="Experience"></span></h2>
+                        <div class="relative border-l-2 border-indigo-200 pl-8 space-y-8 text-sm">
+                            <div class="absolute w-3 h-3 bg-indigo-600 rounded-full -left-1.5 top-1.5"></div>
+                            <p><i class="fa-solid fa-star major-star"></i><strong data-lang-ja="2022-10 – 現在: 九州大学 大学院法学研究院, 准教授" data-lang-en="Oct 2022 – Present: Associate Professor, Faculty of Law, Kyushu University"></strong></p>
+                            <p data-lang-ja="2024-02 – 現在: データサイエンス共同利用基盤施設, 客員准教授" data-lang-en="Feb 2024 – Present: Visiting Associate Professor, Joint Support-Center for Data Science Research"></p>
+                            <p data-lang-ja="2023-01 – 2024-03: 理化学研究所 革新知能統合研究センター, 客員研究員" data-lang-en="Jan 2023 – Mar 2024: Visiting Scientist, RIKEN Center for Advanced Intelligence Project"></p>
+                             <p data-lang-ja="2022-10 – 2025-03: 大阪大学 社会技術共創研究センター, 招へい准教授" data-lang-en="Oct 2022 – Mar 2025: Guest Associate Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"></p>
+                            <p><i class="fa-solid fa-star major-star"></i><span data-lang-ja="2020-04 – 2022-09: 大阪大学 社会技術共創研究センター, 特任助教（常勤）" data-lang-en="Apr 2020 – Sep 2022: Specially Appointed Assistant Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"></span></p>
+                            <p><i class="fa-solid fa-star major-star"></i><span data-lang-ja="2019-04 – 2020-03: 日本学術振興会, 特別研究員（DC2）" data-lang-en="Apr 2019 – Mar 2020: Special Researcher (DC2), JSPS"></span></p>
+                        </div>
+                    </section>
+        
+                    <section id="education">
+                        <h2 class="text-3xl font-bold pb-2 mb-6 section-title"><i class="fa-solid fa-user-graduate text-2xl"></i><span data-lang-ja="学歴" data-lang-en="Education"></span></h2>
+                        <div class="relative border-l-2 border-indigo-200 pl-8 space-y-6 text-sm">
+                             <div class="absolute w-3 h-3 bg-indigo-600 rounded-full -left-1.5 top-1.5"></div>
+                            <p data-lang-ja="2017-04 – 2020-03: 慶應義塾大学, 大学院法学研究科, 後期博士課程" data-lang-en="Apr 2017 – Mar 2020: Doctor's Course, Graduate School of Law, Keio University"></p>
+                            <p data-lang-ja="2015-04 – 2017-03: 中央大学, 大学院法学研究科, 博士課程前期課程 (修士（法学）)" data-lang-en="Apr 2015 – Mar 2017: Master's Course, Graduate School of Law, Chuo University (Master of Laws)"></p>
+                            <p data-lang-ja="2011-04 – 2015-03: 中央大学, 法学部, 法律学科" data-lang-en="Apr 2011 – Mar 2015: Department of Law, Faculty of Law, Chuo University"></p>
+                        </div>
+                    </section>
+                </div>
+
+                <section id="grants" class="scroll-reveal">
+                    <h2 class="text-3xl font-bold pb-2 mb-6 section-title"><i class="fa-solid fa-hand-holding-dollar text-2xl"></i><span data-lang-ja="競争的資金" data-lang-en="Grants"></span></h2>
+                    <ul class="space-y-4">
+                        <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><span data-lang-ja="ニューロテクノロジーの人間中心型国際ガバナンス構築に向けた企画調査" data-lang-en="Planning Survey for Building Human-Centric International Governance of Neurotechnology"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="JST 社会技術研究開発, 2024-10–2025-03" data-lang-en="JST RISTEX, Oct 2024 – Mar 2025"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="代表: 福士 珠美 / 役割: 研究分担者" data-lang-en="PI: Tamami Fukushi / Role: Co-Investigator"></p>
+                        </li>
+                        <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><i class="fa-solid fa-star major-star"></i><span data-lang-ja="根源的規約主義に基づく新たな対話規範および社会規範とその実装の検討" data-lang-en="Study on new dialogue and social norms based on radical conventionalism and their implementation"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="科研費, 2022-04–2024-03" data-lang-en="JSPS KAKENHI, Apr 2022 – Mar 2024"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="代表: 小山 虎 / 役割: 研究分担者" data-lang-en="PI: Tora Koyama / Role: Co-Investigator"></p>
+                        </li>
+                         <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><i class="fa-solid fa-star major-star"></i><span data-lang-ja="法的判断における論証の役割と機械による裁判官の代替可能性について" data-lang-en="On the Role of Argumentation in Legal Judgment and the Possibility of Replacing Judges with Machines"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="科研費, 2020-09–2022-03" data-lang-en="JSPS KAKENHI, Sep 2020 – Mar 2022"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="役割: 研究代表者" data-lang-en="Role: Principal Investigator"></p>
+                        </li>
+                        <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><span data-lang-ja="根源的規約主義に基づく新たな対話規範および社会規範の追求" data-lang-en="Pursuing conversational and social norm based upon radical conventionalism"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="科研費, 2020-04–2022-03" data-lang-en="JSPS KAKENHI, Apr 2020 – Mar 2022"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="代表: 小山 虎 / 役割: 連携研究者" data-lang-en="PI: Tora Koyama / Role: Collaborative Researcher"></p>
+                        </li>
+                        <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><i class="fa-solid fa-star major-star"></i><span data-lang-ja="身体的能力と知覚能力の拡張による身体の制約からの解放" data-lang-en="Liberation from the limitations of the body by augmenting our physical and perceptual capabilities"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="ムーンショット型, 2020–2025" data-lang-en="Moonshot R&D, 2020–2025"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="代表: 金井 良太 / 役割: 連携研究者" data-lang-en="PI: Ryota Kanai / Role: Collaborative Researcher"></p>
+                        </li>
+                        <li class="card p-4">
+                            <p class="font-semibold text-indigo-800"><span data-lang-ja="人工知能の法律遵守機構の実現" data-lang-en="Realization of Legal Compliance Mechanism for AI"></span></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="科研費, 2019-06–2022-03" data-lang-en="JSPS KAKENHI, Jun 2019 – Mar 2022"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="代表: 佐藤 健 / 役割: 連携研究者" data-lang-en="PI: Ken Satoh / Role: Collaborative Researcher"></p>
+                        </li>
+                         <li class="card p-4">
+                            <p class="font-semibold text-indigo-800" data-lang-ja="機械による裁判官の代替可能性について" data-lang-en="Can computer perform legal interpretation?"></p>
+                            <p class="text-sm text-gray-600" data-lang-ja="科研費, 2019-04–2021-03" data-lang-en="JSPS KAKENHI, Apr 2019 – Mar 2021"></p>
+                            <p class="text-sm text-gray-800 mt-1" data-lang-ja="役割: 研究代表者" data-lang-en="Role: Principal Investigator"></p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+             <section id="social-contributions" class="my-16 scroll-reveal">
+                <h2 class="text-3xl font-bold pb-2 mb-6 section-title"><i class="fa-solid fa-handshake-angle text-2xl"></i><span data-lang-ja="社会貢献活動" data-lang-en="Social Contributions"></span></h2>
+                <div class="space-y-4">
+                    <div class="card p-4">
+                        <p class="font-semibold text-indigo-800" data-lang-ja="企業法務は“技術”をどう扱うか ～システム開発契約とＥＬＳＩを題材に考える～" data-lang-en="How Corporate Legal Departments Should Handle 'Technology' - Considering System Development Contracts and ELSI"></p>
+                        <p class="text-sm text-gray-600" data-lang-ja="企業法務セミナー, 講師 (2023-03-23)" data-lang-en="Corporate Legal Seminar, Lecturer (Mar 23, 2023)"></p>
+                    </div>
+                    <div class="card p-4">
+                        <p class="font-semibold text-indigo-800" data-lang-ja="自動決定の「悪さ」はどこにあるかを考える" data-lang-en="Considering the 'Wrongs' of Automated Decision-Making"></p>
+                        <p class="text-sm text-gray-600" data-lang-ja="ソニー法務グループ拡大勉強会, 講師 (2022-03-24)" data-lang-en="Sony Legal Group Workshop, Lecturer (Mar 24, 2022)"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications" class="mt-16 scroll-reveal">
+                <h2 class="text-3xl font-bold pb-2 mb-6 section-title"><i class="fa-solid fa-book-open text-2xl"></i><span data-lang-ja="研究業績" data-lang-en="Publications"></span></h2>
+                
+                <div class="bg-white/90 backdrop-blur-md p-4 rounded-lg shadow-sm mb-6">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="text" id="search-pubs" class="flex-grow border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" data-lang-ja-placeholder="キーワードで検索..." data-lang-en-placeholder="Search by keyword...">
+                        <div class="flex-shrink-0 flex items-center justify-center gap-4 flex-wrap">
+                            <div id="filter-btns" class="flex items-center justify-center gap-2 flex-wrap">
+                                <button class="filter-btn bg-indigo-600 text-white px-3 py-1 text-xs rounded-full" data-filter="all">All</button>
+                                <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full" data-filter="paper" data-lang-ja="論文" data-lang-en="Paper"></button>
+                                <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full" data-filter="book" data-lang-ja="著書" data-lang-en="Book"></button>
+                                <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full" data-filter="presentation" data-lang-ja="講演" data-lang-en="Talk"></button>
+                                <button class="filter-btn bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full" data-filter="misc" data-lang-ja="他" data-lang-en="Misc"></button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-semibold text-gray-600" data-lang-ja="主要" data-lang-en="Major"></span>
+                                <div id="major-toggle" class="toggle-switch">
+                                    <div class="toggle-switch-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul id="publication-list" class="space-y-4 text-sm">
+                    <!-- Publications will be dynamically inserted here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <button id="back-to-top" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        const allPublications = [
+            // Papers
+            { category: "paper", ja: "eSportsをめぐる法 : 文化・産業政策を支える法のゆくえ(2)「スポーツ」としてのゲームとはどのようなものか. <em>法律時報</em>, 96(9), 104-106, 2024.", en: "eSports and the Law: The Future of Law Supporting Cultural and Industrial Policies (2). <em>Horitsu Jiho</em>, 96(9), 104-106, 2024.", url: "https://ndlsearch.ndl.go.jp/books/R000000004-I033613362" },
+            { category: "paper", ja: "スマートコントラクトは「使える」のか―技術的な基本事項とその限界―. <em>法律時報</em>, 96(8), 16-21, 2024.", en: "Substituting Law with Code? Promises and Limits of Smart Contracts in Legal Practice. <em>Horitsu Jiho</em>, 96(8), 16-21, 2024.", url: "https://cir.nii.ac.jp/crid/1520019214247675392?lang=ja" },
+            { category: "paper", ja: "AI・デジタル化と法制事務. <em>法学教室</em>, (523), 37, 2024.", en: "AI, Digitalization, and Legislative Affairs. <em>Hogaku Kyoshitsu</em>, (523), 37, 2024.", major: true },
+            { category: "paper", ja: "Agile Governance as AI Governance: A Challenge for Governance Reformation in Japan. (共著) <em>Human-Centered AI: A Multidisciplinary Perspective for Policy-Makers, Auditors, and Users</em>, 2024.", en: "Agile Governance as AI Governance: A Challenge for Governance Reformation in Japan. (Co-authored) <em>Human-Centered AI: A Multidisciplinary Perspective for Policy-Makers, Auditors, and Users</em>, 2024.", major: true, url: "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003320791-28/agile-governance-ai-governance-kodai-zukeyama-tomoumi-nishimura-haluna-kawashima-tatsuhiko-yamamoto" },
+            { category: "paper", ja: "「発言権」に基づく対話システムのレベル分け—AIアカウンタビリティの実現に向けたマイルストーンの提案—. (共著) <em>日本ロボット学会誌</em>, 42(6), 555-561, 2024.", en: "Classification of Conversational Systems with Levels Based on “the Right to Speak''—A Proposal of a Milestone to Realize AI Accountability—. (Co-authored) <em>Journal of the Robotics Society of Japan</em>, 42(6), 555-561, 2024.", url: "https://doi.org/10.7210/jrsj.42.555" },
+            { category: "paper", ja: "法実務に技術を導入すると何が嬉しいか――「リーガルテック」をシステム導入プロジェクトの視点から考える. <em>情報法制研究</em>, (11), 15-26, 2022.", en: "If you want to utilize IT in legal practices, how come you leave most processes status quo. <em>Journal of Law and Information System</em>, (11), 15-26, 2022.", major: true, url: "https://www.jstage.jst.go.jp/article/alis/11/0/11_15/_article/-char/ja/" },
+            { category: "paper", ja: "法的判断への人工知能の応用と、法学にとってのその意義. <em>法學政治學論究 : 法律・政治・社会</em>, (124), 165-186, 2020.", en: "The Implication of Applications of Artificial Intelligence to Legal Reasoning. <em>HOGAKU SEIJIGAKU RONKYU: Journal of Law and Political Studies</em>, (124), 165-186, 2020.", url: "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN10086101-20200315-0165" },
+            { category: "paper", ja: "法的推論における「例外」の役割 : 「原則/例外」図式の形式的な分析. <em>法學政治學論究 : 法律・政治・社会</em>, (117), 243-267, 2018.", en: "An analysis of legal exceptions with argumentation-based inference. <em>HOGAKU SEIJIGAKU RONKYU: Journal of Law and Political Studies</em>, (117), 243-267, 2018.", major: true, url: "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN10086101-20180615-0243" },
+            // Books
+            { category: "book", major: true, ja: "もっと問いかける法哲学 (担当: 裁判官はAIで代替できるか？（第15章）). 法律文化社, 2024.", en: "More Inquiries into Legal Philosophy (Chapter: Can Judges Be Replaced by AI?). Houritsu Bunka Sha, 2024.", url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04340-5" },
+            { category: "book", major: true, ja: "Liberty 2.0: 自由論のバージョン・アップはありうるのか？ (担当: AI：人工知能についての二種類の批判とそれらの技術的・規範的な議論への含意). 弘文堂, 2023.", en: "Liberty 2.0: Can We Upgrade the Theory of Liberty? (Chapter: AI: Two Types of Criticism of Artificial Intelligence and Their Implications for Technical and Normative Debates). Kobundo, 2023.", url: "https://www.koubundou.co.jp/book/b618726.html" },
+            { category: "book", major: true, ja: "法学概説 (担当: 第1章「法の機能」). 弘文堂, 2022.", en: "Introduction to Law (Chapter 1: The Function of Law). Kobundo, 2022.", url: "https://www.koubundou.co.jp/book/b602874.html" },
+            { category: "book", major: true, ja: "紛争解決のためのシステム開発法務ーーAI・アジャイル・パッケージ開発等のトラブル対応 (共著). 法律文化社, 2022.", en: "Legal Practice for System Development Dispute Resolution -- Handling Troubles in AI, Agile, and Package Development (Co-authored). Houritsu Bunka Sha, 2022.", url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04188-3" },
+            { category: "book", major: true, ja: "AIで変わる法と社会 : 近未来を深く考えるために (担当: 第7章「判決自動販売機の可能性」). 岩波書店, 2020.", en: "Artificial Intelligence, Law, and Society (Chapter 7: The Possibility of Automated Judgment Machines). Iwanami Shoten, 2020.", url: "https://www.iwanami.co.jp/book/b527917.html" },
+            // Presentations
+            { category: "presentation", ja: "AI・計算・法的推論. <em>日本法哲学会 2024年度学術大会</em>, 2024-11-10 (招待有り).", en: "AI, Computation, and Legal Reasoning. <em>Japan Association of Legal Philosophy Annual Conference 2024</em>, Nov 10, 2024 (Invited).", major: true },
+            { category: "presentation", ja: "学際研究の課題：特に情報科学と法哲学の交錯領域について. <em>第34回 九州法理論研究会</em>, 2023-09-24.", en: "Challenges in Interdisciplinary Research: On the Intersection of Informatics and Legal Philosophy. <em>34th Kyushu Legal Theory Study Group</em>, Sep 24, 2023." },
+            { category: "presentation", ja: "倫理学や法学は科学技術研究にとってどう有益か. <em>東京理科大学ELSI研究会 第1回研究会</em>, 2023-02-11 (招待有り).", en: "How Legal and Ethical Research Can Contribute to Science and Technology. <em>1st TUS ELSI Workshop</em>, Feb 11, 2023 (Invited)." },
+            { category: "presentation", ja: "議論の研究から見た「不一致」. <em>日本科学哲学会第55回大会 ワークショップ「論理とリーズニングにおける「不一致」」</em>, 2022-12-04.", en: "the problem of disagreement from the perspective of argumentation theory. <em>55th Annual Meeting of the Philosophy of Science Society, Japan</em>, Dec 4, 2022.", major: true },
+            { category: "presentation", ja: "第3回 IoB-Sオープンフォーラム: 刑事法の観点から (コーディネーター). <em>第3回 IoB-Sオープンフォーラム</em>, 2022-11-29.", en: "3rd IoB-S Open Forum: From the Perspective of Criminal Law (Coordinator). <em>3rd IoB-S Open Forum</em>, Nov 29, 2022.", major: true, url: "https://www.kgri.keio.ac.jp/news-event/133386.html" },
+            { category: "presentation", ja: "議論に関する研究の簡単な紹介. <em>CREST論理セミナー</em>, 2022-03-02 (招待有り).", en: "A brief introduction to argumentation research. <em>CREST Logic Seminar</em>, Mar 2, 2022 (Invited)." },
+            { category: "presentation", ja: "「法的議論」に関する近年の研究と論点の整理. <em>2021年度日本法哲学会 学術大会・総会</em>, 2021-11-20.", en: "Recent Studies and Issues on 'Legal Argumentation'. <em>2021 Annual Conference of Japan Association of Legal Philosophy</em>, Nov 20, 2021.", major: true },
+            { category: "presentation", ja: "法的議論と法の支配――D. CanaleとG. Tuzetの所説を題材に. <em>東京法哲学研究会（7月例会）</em>, 2021-07-17.", en: "Legal Argumentation and the Rule of Law: Based on the theories of D. Canale and G. Tuzet. <em>Tokyo Association for the Philosophy of Law (July Meeting)</em>, Jul 17, 2021." },
+            { category: "presentation", ja: "法的議論と法の支配――D. CanaleとG. Tuzetの議論を題材に. <em>法理学研究会3月例会</em>, 2021-03-27.", en: "Legal Argumentation and the Rule of Law: Based on the arguments of D. Canale and G. Tuzet. <em>Jurisprudence Study Group March Meeting</em>, Mar 27, 2021." },
+            { category: "presentation", ja: "「人工知能と法」と法的議論: 形式的アプローチを踏まえた「法的議論」に関する問題の分析. <em>愛知法理研究会10月例会</em>, 2020-10-17.", en: "'AI and Law' and Legal Argumentation: An Analysis of 'Legal Argumentation' Problems Based on a Formal Approach. <em>Aichi Jurisprudence Study Group October Meeting</em>, Oct 17, 2020." },
+            { category: "presentation", ja: "Formalism and Privatization of Legal System. <em>7th International Conference on Legal Institution Design: Transformation of the Society and its Governance</em>, 名古屋大学, 2020-02-14.", en: "Formalism and Privatization of Legal System. <em>7th International Conference on Legal Institution Design: Transformation of the Society and its Governance</em>, Nagoya University, Feb 14, 2020.", url: "https://www.law.nagoya-u.ac.jp/_userdata/20200205international%20conference%20program_revised_final.pdf" },
+            { category: "presentation", ja: "議論の形式的な表現と、それによる常識推論の分析. <em>第1回認識論研究会</em>, 2019-11-23.", en: "The formal analysis of argumentation and it's relation with commonsense reasoning. <em>1st Epistemology Study Group</em>, Nov 23, 2019." },
+            { category: "presentation", ja: "法的推論の形式的な分析とその射程. <em>日本哲学会第78回大会 公募ワークショップ</em>, 2019-05-19.", en: "A Formal Analysis of Legal Reasoning and its Scope. <em>78th Annual Meeting of the Philosophical Association of Japan</em>, May 19, 2019.", major: true, url: "http://philosophy-japan.org/conference/meeting/yokou_2019/#workshop" },
+            { category: "presentation", ja: "「原則／例外」思考の特徴と法的推論の性質に関する若干の考察. <em>東京法哲学研究会・法理学研究会合同合宿</em>, 2018-09-07.", en: "Characteristics of 'Principle/Exception' Thinking and Some Considerations on the Nature of Legal Reasoning. <em>Tokyo Association for the Philosophy of Law & Jurisprudence Study Group Joint Camp</em>, Sep 7, 2018.", major: true },
+            // Misc
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(最終回・第23回)脳神経技術と民主主義. <em>法学セミナー</em>, 69(3), 59-68, 2024.", en: "Law of IoB: Internet of Brains (Final/23rd) Neurotechnology and Democracy. <em>Hogaku Seminar</em>, 69(3), 59-68, 2024.", major: true, url: "https://ndlsearch.ndl.go.jp/books/R000000004-I033309587" },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第21回)従業員の脳波情報. <em>法学セミナー</em>, 69(1), 62-72, 2024.", en: "Law of IoB: Internet of Brains (21st) Employee Brainwave Information. <em>Hogaku Seminar</em>, 69(1), 62-72, 2024." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第19回)脳死と神経科学. <em>法学セミナー</em>, 68(11), 62-70, 2023.", en: "Law of IoB: Internet of Brains (19th) Brain Death and Neuroscience. <em>Hogaku Seminar</em>, 68(11), 62-70, 2023." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第17回)エンハンスメント問題. <em>法学セミナー</em>, 68(9), 66-75, 2023.", en: "Law of IoB: Internet of Brains (17th) The Enhancement Problem. <em>Hogaku Seminar</em>, 68(9), 66-75, 2023." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第15回)人工神経接続手術による運動機能再建. <em>法学セミナー</em>, 68(7), 56-64, 2023.", en: "Law of IoB: Internet of Brains (15th) Motor Function Reconstruction via Artificial Nerve Connection Surgery. <em>Hogaku Seminar</em>, 68(7), 56-64, 2023." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第13回)出力型BMIによるドローン・レース. <em>法学セミナー</em>, 68(5), 67-76, 2023.", en: "Law of IoB: Internet of Brains (13th) Drone Racing with Output-Type BMI. <em>Hogaku Seminar</em>, 68(5), 67-76, 2023." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第11回)神経科学の多階層性. <em>法学セミナー</em>, 68(3), 63-71, 2023.", en: "Law of IoB: Internet of Brains (11th) The Multi-layered Nature of Neuroscience. <em>Hogaku Seminar</em>, 68(3), 63-71, 2023." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第9回)Cybernetic Beingの世界. <em>法学セミナー</em>, 67(12), 52-64, 2022.", en: "Law of IoB: Internet of Brains (9th) The World of Cybernetic Beings. <em>Hogaku Seminar</em>, 67(12), 52-64, 2022." },
+            { category: "misc", ja: "スマートシティをめぐるELSI研究に向けた先行事例の調査. (共著) <em>大阪大学社会技術共創研究センター</em>, 20, 1-36, 2022.", en: "Survey of Precedent Cases for ELSI Research on Smart Cities. (Co-authored) <em>Research Center on ELSI, Osaka University</em>, 20, 1-36, 2022.", url: "https://doi.org/10.18910/89130" },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第7回)Think Communicationとは何か?. <em>法学セミナー</em>, 67(10), 54-61, 2022.", en: "Law of IoB: Internet of Brains (7th) What is Think Communication?. <em>Hogaku Seminar</em>, 67(10), 54-61, 2022." },
+            { category: "misc", ja: "Law of IoB : インターネット・オブ・ブレインズの法(第5回)思念クラウドの世界へ. <em>法学セミナー</em>, 67(8), 52-59, 2022.", en: "Law of IoB: Internet of Brains (5th) To the World of the Thought Cloud. <em>Hogaku Seminar</em>, 67(8), 52-59, 2022." }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const langToggle = document.getElementById('lang-toggle');
+            const publicationList = document.getElementById('publication-list');
+            const searchInput = document.getElementById('search-pubs');
+            const filterBtns = document.getElementById('filter-btns');
+            const majorToggle = document.getElementById('major-toggle');
+            const backToTopBtn = document.getElementById('back-to-top');
+
+            let currentLang = 'ja';
+            let majorOnly = true;
+            if (majorOnly) majorToggle.classList.add('active');
+            
+            const categoryMap = {
+                paper: { ja: '論文', en: 'Paper', class: 'category-paper' },
+                book: { ja: '著書', en: 'Book', class: 'category-book' },
+                presentation: { ja: '講演', en: 'Talk', class: 'category-presentation' },
+                misc: { ja: 'その他', en: 'Misc', class: 'category-misc' },
+            };
+
+            const renderPublications = () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                const activeFilter = filterBtns.querySelector('.bg-indigo-600').dataset.filter;
+                
+                const filteredPubs = allPublications.filter(p => {
+                    const matchesMajor = !majorOnly || p.major;
+                    const matchesFilter = activeFilter === 'all' || p.category === activeFilter;
+                    const matchesSearch = p.ja.toLowerCase().includes(searchTerm) || p.en.toLowerCase().includes(searchTerm);
+                    return matchesMajor && matchesFilter && matchesSearch;
+                });
+
+                if (filteredPubs.length === 0) {
+                     publicationList.innerHTML = `<p class="text-center text-gray-500" data-lang-ja="該当する業績はありません。" data-lang-en="No matching publications found."></p>`;
+                     updateLanguage(currentLang, true); 
+                     return;
+                }
+
+                publicationList.innerHTML = filteredPubs.map(p => {
+                    const category = categoryMap[p.category];
+                    const categoryTag = `<span class="category-tag ${category.class}" data-lang-ja="${category.ja}" data-lang-en="${category.en}">${category[currentLang]}</span>`;
+                    const majorStar = p.major ? `<i class="fa-solid fa-star major-star"></i>` : '';
+                    const textContent = `<span class="lang-content">${p[currentLang]}</span>`;
+
+                    let linkIcon = '';
+                    let publicationContent = textContent;
+
+                    if (p.url) {
+                        linkIcon = ` <i class="fa-solid fa-link text-xs text-indigo-400 opacity-70 group-hover:opacity-100 transition-opacity"></i>`;
+                        publicationContent = `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="publication-link group">${textContent}${linkIcon}</a>`;
+                    }
+
+                    return `<li class="card p-4 flex items-start">
+                                <div class="flex-shrink-0 w-6">${majorStar}</div>
+                                <div class="flex-grow"><p>${categoryTag}${publicationContent}</p></div>
+                             </li>`;
+                }).join('');
+            };
+
+            const updateLanguage = (lang, partialUpdate = false) => {
+                const scope = partialUpdate ? publicationList : document;
+
+                scope.querySelectorAll('[data-lang-ja]').forEach(el => {
+                    const text = el.dataset[`lang${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
+                    if (text !== undefined) {
+                        if (el.dataset.langJa.includes('<p>')) { el.innerHTML = text; } 
+                        else if (el.tagName === 'INPUT') { el.placeholder = text; }
+                        else { el.textContent = text; }
+                    }
+                });
+
+                if (partialUpdate) {
+                    // Re-render publications to apply language change to dynamic content
+                    renderPublications();
+                } else {
+                    currentLang = lang;
+                    if (lang === 'en') { langToggle.classList.add('en'); } 
+                    else { langToggle.classList.remove('en'); }
+                    document.documentElement.lang = lang;
+                    localStorage.setItem('language', lang);
+                    renderPublications(); 
+                }
+            };
+            
+            filterBtns.addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    filterBtns.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.classList.remove('bg-indigo-600', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-700');
+                    });
+                    e.target.classList.add('bg-indigo-600', 'text-white');
+                    e.target.classList.remove('bg-gray-200', 'text-gray-700');
+                    updateLanguage(currentLang, true);
+                }
+            });
+
+            majorToggle.addEventListener('click', () => {
+                majorOnly = !majorOnly;
+                majorToggle.classList.toggle('active');
+                updateLanguage(currentLang, true);
+            });
+
+            searchInput.addEventListener('input', () => {
+                updateLanguage(currentLang, true);
+            });
+            
+            langToggle.addEventListener('click', () => {
+                const newLang = currentLang === 'ja' ? 'en' : 'ja';
+                updateLanguage(newLang);
+            });
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+            
+            window.addEventListener('scroll', () => {
+                backToTopBtn.style.display = (window.pageYOffset > 300) ? 'flex' : 'none';
+            });
+            backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+            let initialLang = localStorage.getItem('language') || (navigator.language.startsWith('ja') ? 'ja' : 'en');
+            updateLanguage(initialLang);
+        });
+    </script>
+</body>
+</html>
+
+
