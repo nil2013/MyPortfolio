@@ -1,0 +1,204 @@
+# 研究業績データ
+#
+# 1件 = 1エントリ。新しいものを各カテゴリの先頭に追加する（表示順はこのファイルの順）。
+#   category: paper | book | presentation | misc
+#   year:     発行・発表年（年別グルーピングに使用）
+#   major:    true なら主要業績（★、「主要のみ」フィルタ対象）。省略時 false
+#   ja / en:  表示文字列。誌名などの強調には <em>…</em> を使える
+#   url:      任意。リンク先
+
+publications:
+
+  # ---- 論文 / Papers ----
+  - category: paper
+    year: 2024
+    ja: "eSportsをめぐる法 : 文化・産業政策を支える法のゆくえ(2)「スポーツ」としてのゲームとはどのようなものか. <em>法律時報</em>, 96(9), 104-106, 2024."
+    en: "eSports and the Law: The Future of Law Supporting Cultural and Industrial Policies (2). <em>Horitsu Jiho</em>, 96(9), 104-106, 2024."
+    url: "https://ndlsearch.ndl.go.jp/books/R000000004-I033613362"
+  - category: paper
+    year: 2024
+    ja: "スマートコントラクトは「使える」のか―技術的な基本事項とその限界―. <em>法律時報</em>, 96(8), 16-21, 2024."
+    en: "Substituting Law with Code? Promises and Limits of Smart Contracts in Legal Practice. <em>Horitsu Jiho</em>, 96(8), 16-21, 2024."
+    url: "https://www.nippyo.co.jp/shop/magazine/9288.html#:~:text=%E8%88%B9%E8%B6%8A%E8%B3%87%E6%99%B6-,%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%82%AF%E3%83%88%E3%81%AF%E3%80%8C%E4%BD%BF%E3%81%88%E3%82%8B%E3%80%8D%E3%81%AE%E3%81%8B,-%E2%80%94%E2%80%94%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA"
+  - category: paper
+    year: 2024
+    major: true
+    ja: "AI・デジタル化と法制事務. <em>法学教室</em>, (523), 37, 2024."
+    en: "AI, Digitalization, and Legislative Affairs. <em>Hogaku Kyoshitsu</em>, (523), 37, 2024."
+    url: "https://www.yuhikaku.co.jp/hougaku/detail/021300#:~:text=%E2%85%A6-,AI%E3%83%BB%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E5%8C%96%E3%81%A8%E6%B3%95%E5%88%B6%E4%BA%8B%E5%8B%99%E2%80%A6%E8%A5%BF%E6%9D%91%E5%8F%8B%E6%B5%B7,-%E2%80%A6%E2%80%A637"
+  - category: paper
+    year: 2024
+    major: true
+    ja: "Agile Governance as AI Governance: A Challenge for Governance Reformation in Japan. (共著) <em>Human-Centered AI: A Multidisciplinary Perspective for Policy-Makers, Auditors, and Users</em>, 2024."
+    en: "Agile Governance as AI Governance: A Challenge for Governance Reformation in Japan. (Co-authored) <em>Human-Centered AI: A Multidisciplinary Perspective for Policy-Makers, Auditors, and Users</em>, 2024."
+    url: "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003320791-28/agile-governance-ai-governance-kodai-zukeyama-tomoumi-nishimura-haluna-kawashima-tatsuhiko-yamamoto"
+  - category: paper
+    year: 2024
+    ja: "「発言権」に基づく対話システムのレベル分け—AIアカウンタビリティの実現に向けたマイルストーンの提案—. (共著) <em>日本ロボット学会誌</em>, 42(6), 555-561, 2024."
+    en: "Classification of Conversational Systems with Levels Based on “the Right to Speak''—A Proposal of a Milestone to Realize AI Accountability—. (Co-authored) <em>Journal of the Robotics Society of Japan</em>, 42(6), 555-561, 2024."
+    url: "https://doi.org/10.7210/jrsj.42.555"
+  - category: paper
+    year: 2022
+    major: true
+    ja: "法実務に技術を導入すると何が嬉しいか――「リーガルテック」をシステム導入プロジェクトの視点から考える. <em>情報法制研究</em>, (11), 15-26, 2022."
+    en: "If you want to utilize IT in legal practices, how come you leave most processes status quo. <em>Journal of Law and Information System</em>, (11), 15-26, 2022."
+    url: "https://www.jstage.jst.go.jp/article/alis/11/0/11_15/_article/-char/ja/"
+  - category: paper
+    year: 2020
+    ja: "法的判断への人工知能の応用と、法学にとってのその意義. <em>法學政治學論究 : 法律・政治・社会</em>, (124), 165-186, 2020."
+    en: "The Implication of Applications of Artificial Intelligence to Legal Reasoning. <em>HOGAKU SEIJIGAKU RONKYU: Journal of Law and Political Studies</em>, (124), 165-186, 2020."
+    url: "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN10086101-20200315-0165"
+  - category: paper
+    year: 2018
+    major: true
+    ja: "法的推論における「例外」の役割 : 「原則/例外」図式の形式的な分析. <em>法學政治學論究 : 法律・政治・社会</em>, (117), 243-267, 2018."
+    en: "An analysis of legal exceptions with argumentation-based inference. <em>HOGAKU SEIJIGAKU RONKYU: Journal of Law and Political Studies</em>, (117), 243-267, 2018."
+    url: "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=AN10086101-20180615-0243"
+
+  # ---- 著書 / Books ----
+  - category: book
+    year: 2024
+    major: true
+    ja: "もっと問いかける法哲学 (担当: 裁判官はAIで代替できるか？（第15章）). 法律文化社, 2024."
+    en: "More Inquiries into Legal Philosophy (Chapter: Can Judges Be Replaced by AI?). Houritsu Bunka Sha, 2024."
+    url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04340-5"
+  - category: book
+    year: 2023
+    major: true
+    ja: "Liberty 2.0: 自由論のバージョン・アップはありうるのか？ (担当: AI：人工知能についての二種類の批判とそれらの技術的・規範的な議論への含意). 弘文堂, 2023."
+    en: "Liberty 2.0: Can We Upgrade the Theory of Liberty? (Chapter: AI: Two Types of Criticism of Artificial Intelligence and Their Implications for Technical and Normative Debates). Kobundo, 2023."
+    url: "https://www.koubundou.co.jp/book/b618726.html"
+  - category: book
+    year: 2022
+    major: true
+    ja: "法学概説 (担当: 第1章「法の機能」). 弘文堂, 2022."
+    en: "Introduction to Law (Chapter 1: The Function of Law). Kobundo, 2022."
+    url: "https://www.koubundou.co.jp/book/b602874.html"
+  - category: book
+    year: 2022
+    major: true
+    ja: "紛争解決のためのシステム開発法務ーーAI・アジャイル・パッケージ開発等のトラブル対応 (共著). 法律文化社, 2022."
+    en: "Legal Practice for System Development Dispute Resolution -- Handling Troubles in AI, Agile, and Package Development (Co-authored). Houritsu Bunka Sha, 2022."
+    url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04188-3"
+  - category: book
+    year: 2020
+    major: true
+    ja: "AIで変わる法と社会 : 近未来を深く考えるために (担当: 第7章「判決自動販売機の可能性」). 岩波書店, 2020."
+    en: "Artificial Intelligence, Law, and Society (Chapter 7: The Possibility of Automated Judgment Machines). Iwanami Shoten, 2020."
+    url: "https://www.iwanami.co.jp/book/b527917.html"
+
+  # ---- 講演・口頭発表 / Talks ----
+  - category: presentation
+    year: 2024
+    major: true
+    ja: "AI・計算・法的推論. <em>日本法哲学会 2024年度学術大会</em>, 2024-11-10 (招待有り)."
+    en: "AI, Computation, and Legal Reasoning. <em>Japan Association of Legal Philosophy Annual Conference 2024</em>, Nov 10, 2024 (Invited)."
+  - category: presentation
+    year: 2023
+    ja: "学際研究の課題：特に情報科学と法哲学の交錯領域について. <em>第34回 九州法理論研究会</em>, 2023-09-24."
+    en: "Challenges in Interdisciplinary Research: On the Intersection of Informatics and Legal Philosophy. <em>34th Kyushu Legal Theory Study Group</em>, Sep 24, 2023."
+  - category: presentation
+    year: 2023
+    ja: "倫理学や法学は科学技術研究にとってどう有益か. <em>東京理科大学ELSI研究会 第1回研究会</em>, 2023-02-11 (招待有り)."
+    en: "How Legal and Ethical Research Can Contribute to Science and Technology. <em>1st TUS ELSI Workshop</em>, Feb 11, 2023 (Invited)."
+  - category: presentation
+    year: 2022
+    major: true
+    ja: "議論の研究から見た「不一致」. <em>日本科学哲学会第55回大会 ワークショップ「論理とリーズニングにおける「不一致」」</em>, 2022-12-04."
+    en: "the problem of disagreement from the perspective of argumentation theory. <em>55th Annual Meeting of the Philosophy of Science Society, Japan</em>, Dec 4, 2022."
+  - category: presentation
+    year: 2022
+    major: true
+    ja: "第3回 IoB-Sオープンフォーラム: 刑事法の観点から (コーディネーター). <em>第3回 IoB-Sオープンフォーラム</em>, 2022-11-29."
+    en: "3rd IoB-S Open Forum: From the Perspective of Criminal Law (Coordinator). <em>3rd IoB-S Open Forum</em>, Nov 29, 2022."
+    url: "https://www.kgri.keio.ac.jp/news-event/133386.html"
+  - category: presentation
+    year: 2022
+    ja: "議論に関する研究の簡単な紹介. <em>CREST論理セミナー</em>, 2022-03-02 (招待有り)."
+    en: "A brief introduction to argumentation research. <em>CREST Logic Seminar</em>, Mar 2, 2022 (Invited)."
+  - category: presentation
+    year: 2021
+    major: true
+    ja: "「法的議論」に関する近年の研究と論点の整理. <em>2021年度日本法哲学会 学術大会・総会</em>, 2021-11-20."
+    en: "Recent Studies and Issues on 'Legal Argumentation'. <em>2021 Annual Conference of Japan Association of Legal Philosophy</em>, Nov 20, 2021."
+  - category: presentation
+    year: 2021
+    ja: "法的議論と法の支配――D. CanaleとG. Tuzetの所説を題材に. <em>東京法哲学研究会（7月例会）</em>, 2021-07-17."
+    en: "Legal Argumentation and the Rule of Law: Based on the theories of D. Canale and G. Tuzet. <em>Tokyo Association for the Philosophy of Law (July Meeting)</em>, Jul 17, 2021."
+  - category: presentation
+    year: 2021
+    ja: "法的議論と法の支配――D. CanaleとG. Tuzetの議論を題材に. <em>法理学研究会3月例会</em>, 2021-03-27."
+    en: "Legal Argumentation and the Rule of Law: Based on the arguments of D. Canale and G. Tuzet. <em>Jurisprudence Study Group March Meeting</em>, Mar 27, 2021."
+  - category: presentation
+    year: 2020
+    ja: "「人工知能と法」と法的議論: 形式的アプローチを踏まえた「法的議論」に関する問題の分析. <em>愛知法理研究会10月例会</em>, 2020-10-17."
+    en: "'AI and Law' and Legal Argumentation: An Analysis of 'Legal Argumentation' Problems Based on a Formal Approach. <em>Aichi Jurisprudence Study Group October Meeting</em>, Oct 17, 2020."
+  - category: presentation
+    year: 2020
+    ja: "Formalism and Privatization of Legal System. <em>7th International Conference on Legal Institution Design: Transformation of the Society and its Governance</em>, 名古屋大学, 2020-02-14."
+    en: "Formalism and Privatization of Legal System. <em>7th International Conference on Legal Institution Design: Transformation of the Society and its Governance</em>, Nagoya University, Feb 14, 2020."
+    url: "https://www.law.nagoya-u.ac.jp/_userdata/20200205international%20conference%20program_revised_final.pdf"
+  - category: presentation
+    year: 2019
+    ja: "議論の形式的な表現と、それによる常識推論の分析. <em>第1回認識論研究会</em>, 2019-11-23."
+    en: "The formal analysis of argumentation and it's relation with commonsense reasoning. <em>1st Epistemology Study Group</em>, Nov 23, 2019."
+  - category: presentation
+    year: 2019
+    major: true
+    ja: "法的推論の形式的な分析とその射程. <em>日本哲学会第78回大会 公募ワークショップ</em>, 2019-05-19."
+    en: "A Formal Analysis of Legal Reasoning and its Scope. <em>78th Annual Meeting of the Philosophical Association of Japan</em>, May 19, 2019."
+    url: "http://philosophy-japan.org/conference/meeting/yokou_2019/#workshop"
+  - category: presentation
+    year: 2018
+    major: true
+    ja: "「原則／例外」思考の特徴と法的推論の性質に関する若干の考察. <em>東京法哲学研究会・法理学研究会合同合宿</em>, 2018-09-07."
+    en: "Characteristics of 'Principle/Exception' Thinking and Some Considerations on the Nature of Legal Reasoning. <em>Tokyo Association for the Philosophy of Law & Jurisprudence Study Group Joint Camp</em>, Sep 7, 2018."
+
+  # ---- その他 / Misc ----
+  - category: misc
+    year: 2024
+    major: true
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(最終回・第23回)脳神経技術と民主主義. <em>法学セミナー</em>, 69(3), 59-68, 2024."
+    en: "Law of IoB: Internet of Brains (Final/23rd) Neurotechnology and Democracy. <em>Hogaku Seminar</em>, 69(3), 59-68, 2024."
+    url: "https://ndlsearch.ndl.go.jp/books/R000000004-I033309587"
+  - category: misc
+    year: 2024
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第21回)従業員の脳波情報. <em>法学セミナー</em>, 69(1), 62-72, 2024."
+    en: "Law of IoB: Internet of Brains (21st) Employee Brainwave Information. <em>Hogaku Seminar</em>, 69(1), 62-72, 2024."
+  - category: misc
+    year: 2023
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第19回)脳死と神経科学. <em>法学セミナー</em>, 68(11), 62-70, 2023."
+    en: "Law of IoB: Internet of Brains (19th) Brain Death and Neuroscience. <em>Hogaku Seminar</em>, 68(11), 62-70, 2023."
+  - category: misc
+    year: 2023
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第17回)エンハンスメント問題. <em>法学セミナー</em>, 68(9), 66-75, 2023."
+    en: "Law of IoB: Internet of Brains (17th) The Enhancement Problem. <em>Hogaku Seminar</em>, 68(9), 66-75, 2023."
+  - category: misc
+    year: 2023
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第15回)人工神経接続手術による運動機能再建. <em>法学セミナー</em>, 68(7), 56-64, 2023."
+    en: "Law of IoB: Internet of Brains (15th) Motor Function Reconstruction via Artificial Nerve Connection Surgery. <em>Hogaku Seminar</em>, 68(7), 56-64, 2023."
+  - category: misc
+    year: 2023
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第13回)出力型BMIによるドローン・レース. <em>法学セミナー</em>, 68(5), 67-76, 2023."
+    en: "Law of IoB: Internet of Brains (13th) Drone Racing with Output-Type BMI. <em>Hogaku Seminar</em>, 68(5), 67-76, 2023."
+  - category: misc
+    year: 2023
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第11回)神経科学の多階層性. <em>法学セミナー</em>, 68(3), 63-71, 2023."
+    en: "Law of IoB: Internet of Brains (11th) The Multi-layered Nature of Neuroscience. <em>Hogaku Seminar</em>, 68(3), 63-71, 2023."
+  - category: misc
+    year: 2022
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第9回)Cybernetic Beingの世界. <em>法学セミナー</em>, 67(12), 52-64, 2022."
+    en: "Law of IoB: Internet of Brains (9th) The World of Cybernetic Beings. <em>Hogaku Seminar</em>, 67(12), 52-64, 2022."
+  - category: misc
+    year: 2022
+    ja: "スマートシティをめぐるELSI研究に向けた先行事例の調査. (共著) <em>大阪大学社会技術共創研究センター</em>, 20, 1-36, 2022."
+    en: "Survey of Precedent Cases for ELSI Research on Smart Cities. (Co-authored) <em>Research Center on ELSI, Osaka University</em>, 20, 1-36, 2022."
+    url: "https://doi.org/10.18910/89130"
+  - category: misc
+    year: 2022
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第7回)Think Communicationとは何か?. <em>法学セミナー</em>, 67(10), 54-61, 2022."
+    en: "Law of IoB: Internet of Brains (7th) What is Think Communication?. <em>Hogaku Seminar</em>, 67(10), 54-61, 2022."
+  - category: misc
+    year: 2022
+    ja: "Law of IoB : インターネット・オブ・ブレインズの法(第5回)思念クラウドの世界へ. <em>法学セミナー</em>, 67(8), 52-59, 2022."
+    en: "Law of IoB: Internet of Brains (5th) To the World of the Thought Cloud. <em>Hogaku Seminar</em>, 67(8), 52-59, 2022."

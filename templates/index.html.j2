@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ t(p.name) }}{% if lang == "ja" %} ({{ p.name.en }}){% endif %}</title>
+  <meta name="description" content="{{ t(p.name) }} — {{ t(p.affiliation) }}">
+  <link rel="canonical" href="{{ site_url }}{% if lang == 'en' %}en/{% endif %}">
+  <link rel="alternate" hreflang="ja" href="{{ site_url }}">
+  <link rel="alternate" hreflang="en" href="{{ site_url }}en/">
+  <link rel="alternate" hreflang="x-default" href="{{ site_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ root }}assets/style.css">
+  <script>
+    try { var th = localStorage.getItem("theme"); if (th) document.documentElement.dataset.theme = th; } catch (e) {}
+  </script>
+  <script src="{{ root }}assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">~/{{ p.name.en.split()[0] | lower }}</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#profile">{{ ui.nav_profile }}</a>
+        <a href="#experience">{{ ui.nav_experience }}</a>
+        <a href="#grants">{{ ui.nav_grants }}</a>
+        <a href="#contributions">{{ ui.nav_contributions }}</a>
+        <a href="#publications">{{ ui.nav_publications }}</a>
+      </nav>
+      <div class="tools">
+        <a class="lang" href="{{ other_href }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}">{{ ui.other_lang }}</a>
+        <button class="theme-btn" type="button" aria-label="{{ ui.theme }}" title="{{ ui.theme }}" hidden>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" id="top">
+      <p class="prompt"><span class="dim">$</span> whoami</p>
+      <h1>{{ t(p.name) }}</h1>
+      {% if lang == "ja" %}<p class="reading">{{ p.reading.ja }} / {{ p.name.en }}</p>{% endif %}
+      <p class="affil">{{ t(p.affiliation) }}</p>
+      <ul class="links">
+        {% for l in p.links %}
+        <li><a href="{{ l.url }}"{% if not l.url.startswith('mailto:') %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ t(l.label) }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="profile" class="section">
+      <h2><span class="idx">01</span>{{ ui.profile }}</h2>
+      <div class="bio">
+        {% for para in t(p.bio) %}
+        <p>{{ para }}</p>
+        {% endfor %}
+      </div>
+      <div class="facets">
+        <div>
+          <h3>{{ ui.keywords }}</h3>
+          <ul class="tags">
+            {% for k in p.keywords %}<li>{{ t(k) }}</li>{% endfor %}
+          </ul>
+        </div>
+        <div>
+          <h3>{{ ui.skills }}</h3>
+          <ul class="tags mono">
+            {% for s in p.skills %}<li{% if s.get("primary") %} class="hl"{% endif %}>{{ t(s.name) }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2><span class="idx">02</span>{{ ui.experience }}</h2>
+      <ol class="timeline">
+        {% for e in p.experience %}
+        <li{% if e.get("major") %} class="major"{% endif %}>
+          <span class="when">{{ t(e.period) }}</span>
+          <span class="what">{{ t(e.title) }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+      <h3 class="sub">{{ ui.education }}</h3>
+      <ol class="timeline">
+        {% for e in p.education %}
+        <li>
+          <span class="when">{{ t(e.period) }}</span>
+          <span class="what">{{ t(e.title) }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section id="grants" class="section">
+      <h2><span class="idx">03</span>{{ ui.grants }}</h2>
+      <ul class="entries">
+        {% for g in p.grants %}
+        <li{% if g.get("major") %} class="major"{% endif %}>
+          <p class="title">{{ t(g.title) }}</p>
+          <p class="meta">{{ t(g.meta) }}<span class="sep">·</span>{{ t(g.role) }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="contributions" class="section">
+      <h2><span class="idx">04</span>{{ ui.contributions }}</h2>
+      <ul class="entries">
+        {% for c in p.contributions %}
+        <li>
+          <p class="title">{{ t(c.title) }}</p>
+          <p class="meta">{{ t(c.meta) }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="publications" class="section">
+      <h2><span class="idx">05</span>{{ ui.publications }}</h2>
+
+      <form class="pub-filter" role="search" hidden onsubmit="return false">
+        <input type="search" id="pub-q" placeholder="{{ ui.search }}" aria-label="{{ ui.search }}" autocomplete="off">
+        <div class="chips" role="group">
+          <button type="button" class="chip" data-cat="all" aria-pressed="true">{{ ui.all }}</button>
+          {% for c in categories %}
+          <button type="button" class="chip" data-cat="{{ c }}" aria-pressed="false">{{ ui["cat_" ~ c] }}</button>
+          {% endfor %}
+        </div>
+        <label class="switch"><input type="checkbox" id="pub-major" checked><span class="track" aria-hidden="true"></span>{{ ui.major_only }}</label>
+        <output class="count" id="pub-count" aria-live="polite">{{ pub_total }} / {{ pub_total }}</output>
+      </form>
+
+      <div id="pub-list">
+        {% for year, items in pub_groups %}
+        <section class="year-group">
+          <h3 class="year">{{ year }}</h3>
+          <ul class="pubs">
+            {% for x in items %}
+            <li class="pub cat-{{ x.category }}{% if x.get("major") %} major{% endif %}" data-cat="{{ x.category }}" data-major="{{ "true" if x.get("major") else "false" }}">
+              <span class="cat">{{ ui["cat_" ~ x.category] }}</span>
+              <span class="body">{% if x.get("url") %}<a href="{{ x.url }}" target="_blank" rel="noopener noreferrer">{{ rich(x[lang]) }}</a>{% else %}{{ rich(x[lang]) }}{% endif %}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+        <p class="empty" id="pub-empty" hidden>{{ ui.no_match }}</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© {{ p.name.en }}<span class="sep">·</span>{{ ui.updated }}: <time datetime="{{ updated }}">{{ updated }}</time></p>
+  </footer>
+</body>
+</html>

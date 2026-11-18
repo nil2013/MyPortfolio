@@ -1,0 +1,110 @@
+# プロフィールデータ
+#
+# 多言語の値は {ja: …, en: …} で書く。言語に依らない値は文字列のまま書ける。
+# major: true の項目には ★ が付く。リストの表示順はこのファイルの順。
+
+site_url: "https://nil2013.github.io/MyPortfolio/"
+
+name:
+  ja: "西村 友海"
+  en: "Tomoumi NISHIMURA"
+reading:
+  ja: "ニシムラ トモウミ"
+  en: "Tomoumi NISHIMURA"
+affiliation:
+  ja: "九州大学 大学院法学研究院 准教授"
+  en: "Associate Professor, Faculty of Law, Kyushu University"
+
+keywords:
+  - {ja: "法哲学", en: "Philosophy of Law"}
+  - {ja: "議論の理論", en: "Argumentation Theory"}
+  - {ja: "法的推論", en: "Legal Reasoning"}
+  - {ja: "リーガルテック", en: "Legal Tech"}
+  - {ja: "計算論的法学", en: "Computational Law"}
+  - {ja: "ELSI", en: "ELSI"}
+  - {ja: "スマートコントラクト", en: "Smart Contracts"}
+  - {ja: "法情報学", en: "Legal Informatics"}
+  - {ja: "システム開発契約", en: "System Development Contracts"}
+  - {ja: "人工知能と法", en: "AI and Law"}
+
+skills:
+  - {name: "Scala", primary: true}
+  - {name: "Java"}
+  - {name: "JavaScript"}
+  - {name: "Objective-C"}
+  - {name: "Swift"}
+  - {name: "Python"}
+  - {name: {ja: "ソフトウェア工学", en: "Software Engineering"}}
+
+# 段落ごとにリストの要素を分ける
+bio:
+  ja:
+    - "法学の基礎理論を研究しています。具体的には、「議論」や「論証」といった概念を中心に据え、論理学の哲学や計算機科学の知見を参照しつつ、法解釈や法的判断といったものの性質や特徴を明らかにすることを試みています。 また、その成果を応用して、法学と他分野の知見とを（それぞれの分野の知見の相違を適切に踏まえつつ、）接続する方法を模索する、といったことも試みています。"
+    - "小学校の図書館で「マイコンBASICマガジン」に出会って以来、プログラムを書くことが趣味です。好きな言語はScalaですが、ちょっと触ったことがある程度を含めれば大抵の言語は書いたことがあります。学生時代は学業の傍らのべ3社でエンジニアとして勤務してきましたので、Java, Scala, JavaScript, Obj-C, Swift, Pythonあたりは業務での使用経験もあります。ソフトウェア工学やプログラミング言語論、型システムなどにも興味関心があり、そうした知見を生かした研究テーマも模索しています。実定法の勉強も好きなので、システム開発契約についても研究しています。"
+  en:
+    - "My research focuses is on the foundational theories of law. Specifically, I examine the nature and characteristics of legal interpretation and judgment by centering on concepts such as \"proof,\" \"argument,\" and \"argumentation,\" with reference to insights from the philosophy of logic and computer science. I also explore ways to apply these findings to connect legal studies with other fields, appropriately considering the differences in their respective knowledge."
+    - "Ever since encountering \"Mycom BASIC Magazine\" in my elementary school library, programming has been my hobby. While Scala is my favorite language, I have experience with most languages to some extent. During my student years, I worked as an engineer at three companies, gaining professional experience with Java, Scala, JavaScript, Obj-C, Swift, and Python. I am also interested in software engineering, programming language theory, and type systems, and I am exploring research themes that utilize this knowledge. I also enjoy studying positive law and am researching system development contracts."
+
+links:
+  - {label: "Email", url: "mailto:t-nishimura@law.kyushu-u.ac.jp"}
+  - {label: {ja: "大学教員紹介", en: "Faculty Profile"}, url: "https://www.law.kyushu-u.ac.jp/general/staff/nishimura_tomoumi"}
+  - {label: "researchmap", url: "https://researchmap.jp/tnishimura"}
+  - {label: "ORCID", url: "https://orcid.org/0000-0002-1066-0913"}
+  - {label: "J-GLOBAL", url: "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201801021260539049"}
+
+experience:
+  - period: {ja: "2022-10 – 現在", en: "Oct 2022 – Present"}
+    title: {ja: "九州大学 大学院法学研究院, 准教授", en: "Associate Professor, Faculty of Law, Kyushu University"}
+    major: true
+  - period: {ja: "2024-02 – 現在", en: "Feb 2024 – Present"}
+    title: {ja: "データサイエンス共同利用基盤施設, 客員准教授", en: "Visiting Associate Professor, Joint Support-Center for Data Science Research"}
+  - period: {ja: "2023-01 – 2024-03", en: "Jan 2023 – Mar 2024"}
+    title: {ja: "理化学研究所 革新知能統合研究センター, 客員研究員", en: "Visiting Scientist, RIKEN Center for Advanced Intelligence Project"}
+  - period: {ja: "2022-10 – 2025-03", en: "Oct 2022 – Mar 2025"}
+    title: {ja: "大阪大学 社会技術共創研究センター, 招へい准教授", en: "Guest Associate Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"}
+  - period: {ja: "2020-04 – 2022-09", en: "Apr 2020 – Sep 2022"}
+    title: {ja: "大阪大学 社会技術共創研究センター, 特任助教（常勤）", en: "Specially Appointed Assistant Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"}
+    major: true
+  - period: {ja: "2019-04 – 2020-03", en: "Apr 2019 – Mar 2020"}
+    title: {ja: "日本学術振興会, 特別研究員（DC2）", en: "Special Researcher (DC2), JSPS"}
+    major: true
+
+education:
+  - period: {ja: "2017-04 – 2020-03", en: "Apr 2017 – Mar 2020"}
+    title: {ja: "慶應義塾大学, 大学院法学研究科, 後期博士課程", en: "Doctor's Course, Graduate School of Law, Keio University"}
+  - period: {ja: "2015-04 – 2017-03", en: "Apr 2015 – Mar 2017"}
+    title: {ja: "中央大学, 大学院法学研究科, 博士課程前期課程 (修士（法学）)", en: "Master's Course, Graduate School of Law, Chuo University (Master of Laws)"}
+  - period: {ja: "2011-04 – 2015-03", en: "Apr 2011 – Mar 2015"}
+    title: {ja: "中央大学, 法学部, 法律学科", en: "Department of Law, Faculty of Law, Chuo University"}
+
+grants:
+  - title: {ja: "ニューロテクノロジーの人間中心型国際ガバナンス構築に向けた企画調査", en: "Planning Survey for Building Human-Centric International Governance of Neurotechnology"}
+    meta: {ja: "JST 社会技術研究開発, 2024-10–2025-03", en: "JST RISTEX, Oct 2024 – Mar 2025"}
+    role: {ja: "代表: 福士 珠美 / 役割: 研究分担者", en: "PI: Tamami Fukushi / Role: Co-Investigator"}
+  - title: {ja: "根源的規約主義に基づく新たな対話規範および社会規範とその実装の検討", en: "Study on new dialogue and social norms based on radical conventionalism and their implementation"}
+    meta: {ja: "科研費, 2022-04–2024-03", en: "JSPS KAKENHI, Apr 2022 – Mar 2024"}
+    role: {ja: "代表: 小山 虎 / 役割: 研究分担者", en: "PI: Tora Koyama / Role: Co-Investigator"}
+    major: true
+  - title: {ja: "法的判断における論証の役割と機械による裁判官の代替可能性について", en: "On the Role of Argumentation in Legal Judgment and the Possibility of Replacing Judges with Machines"}
+    meta: {ja: "科研費, 2020-09–2022-03", en: "JSPS KAKENHI, Sep 2020 – Mar 2022"}
+    role: {ja: "役割: 研究代表者", en: "Role: Principal Investigator"}
+    major: true
+  - title: {ja: "根源的規約主義に基づく新たな対話規範および社会規範の追求", en: "Pursuing conversational and social norm based upon radical conventionalism"}
+    meta: {ja: "科研費, 2020-04–2022-03", en: "JSPS KAKENHI, Apr 2020 – Mar 2022"}
+    role: {ja: "代表: 小山 虎 / 役割: 連携研究者", en: "PI: Tora Koyama / Role: Collaborative Researcher"}
+  - title: {ja: "身体的能力と知覚能力の拡張による身体の制約からの解放", en: "Liberation from the limitations of the body by augmenting our physical and perceptual capabilities"}
+    meta: {ja: "ムーンショット型, 2020–2025", en: "Moonshot R&D, 2020–2025"}
+    role: {ja: "代表: 金井 良太 / 役割: 連携研究者", en: "PI: Ryota Kanai / Role: Collaborative Researcher"}
+    major: true
+  - title: {ja: "人工知能の法律遵守機構の実現", en: "Realization of Legal Compliance Mechanism for AI"}
+    meta: {ja: "科研費, 2019-06–2022-03", en: "JSPS KAKENHI, Jun 2019 – Mar 2022"}
+    role: {ja: "代表: 佐藤 健 / 役割: 連携研究者", en: "PI: Ken Satoh / Role: Collaborative Researcher"}
+  - title: {ja: "機械による裁判官の代替可能性について", en: "Can computer perform legal interpretation?"}
+    meta: {ja: "科研費, 2019-04–2021-03", en: "JSPS KAKENHI, Apr 2019 – Mar 2021"}
+    role: {ja: "役割: 研究代表者", en: "Role: Principal Investigator"}
+
+contributions:
+  - title: {ja: "企業法務は“技術”をどう扱うか ～システム開発契約とＥＬＳＩを題材に考える～", en: "How Corporate Legal Departments Should Handle 'Technology' - Considering System Development Contracts and ELSI"}
+    meta: {ja: "企業法務セミナー, 講師 (2023-03-23)", en: "Corporate Legal Seminar, Lecturer (Mar 23, 2023)"}
+  - title: {ja: "自動決定の「悪さ」はどこにあるかを考える", en: "Considering the 'Wrongs' of Automated Decision-Making"}
+    meta: {ja: "ソニー法務グループ拡大勉強会, 講師 (2022-03-24)", en: "Sony Legal Group Workshop, Lecturer (Mar 24, 2022)"}
