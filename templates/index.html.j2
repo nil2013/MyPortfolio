@@ -119,6 +119,17 @@
         </li>
         {% endfor %}
       </ul>
+      {% if p.get("committees") %}
+      <h3 class="sub">{{ ui.committees }}</h3>
+      <ul class="entries">
+        {% for c in p.committees %}
+        <li>
+          <p class="title">{{ t(c.title) }}</p>
+          <p class="meta">{{ t(c.meta) }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </section>
 
     <section id="publications" class="section">
