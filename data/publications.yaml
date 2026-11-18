@@ -11,12 +11,18 @@ publications:
 
   # ---- 論文 / Papers ----
   - category: paper
+    year: 2025
+    major: true
+    ja: "コメント——「議論」に関する既存の研究との対比. <em>法律時報</em>, 97(12), 2025."
+    en: "Comment: A Comparison with Existing Research on “Argumentation”. <em>Horitsu Jiho</em>, 97(12), 2025."
+  - category: paper
     year: 2024
     ja: "eSportsをめぐる法 : 文化・産業政策を支える法のゆくえ(2)「スポーツ」としてのゲームとはどのようなものか. <em>法律時報</em>, 96(9), 104-106, 2024."
     en: "eSports and the Law: The Future of Law Supporting Cultural and Industrial Policies (2). <em>Horitsu Jiho</em>, 96(9), 104-106, 2024."
     url: "https://ndlsearch.ndl.go.jp/books/R000000004-I033613362"
   - category: paper
     year: 2024
+    major: true
     ja: "スマートコントラクトは「使える」のか―技術的な基本事項とその限界―. <em>法律時報</em>, 96(8), 16-21, 2024."
     en: "Substituting Law with Code? Promises and Limits of Smart Contracts in Legal Practice. <em>Horitsu Jiho</em>, 96(8), 16-21, 2024."
     url: "https://www.nippyo.co.jp/shop/magazine/9288.html#:~:text=%E8%88%B9%E8%B6%8A%E8%B3%87%E6%99%B6-,%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%82%AF%E3%83%88%E3%81%AF%E3%80%8C%E4%BD%BF%E3%81%88%E3%82%8B%E3%80%8D%E3%81%AE%E3%81%8B,-%E2%80%94%E2%80%94%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA"
@@ -58,31 +64,26 @@ publications:
   # ---- 著書 / Books ----
   - category: book
     year: 2024
-    major: true
     ja: "もっと問いかける法哲学 (担当: 裁判官はAIで代替できるか？（第15章）). 法律文化社, 2024."
     en: "More Inquiries into Legal Philosophy (Chapter: Can Judges Be Replaced by AI?). Houritsu Bunka Sha, 2024."
     url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04340-5"
   - category: book
     year: 2023
-    major: true
     ja: "Liberty 2.0: 自由論のバージョン・アップはありうるのか？ (担当: AI：人工知能についての二種類の批判とそれらの技術的・規範的な議論への含意). 弘文堂, 2023."
     en: "Liberty 2.0: Can We Upgrade the Theory of Liberty? (Chapter: AI: Two Types of Criticism of Artificial Intelligence and Their Implications for Technical and Normative Debates). Kobundo, 2023."
     url: "https://www.koubundou.co.jp/book/b618726.html"
   - category: book
     year: 2022
-    major: true
     ja: "法学概説 (担当: 第1章「法の機能」). 弘文堂, 2022."
     en: "Introduction to Law (Chapter 1: The Function of Law). Kobundo, 2022."
     url: "https://www.koubundou.co.jp/book/b602874.html"
   - category: book
     year: 2022
-    major: true
     ja: "紛争解決のためのシステム開発法務ーーAI・アジャイル・パッケージ開発等のトラブル対応 (共著). 法律文化社, 2022."
     en: "Legal Practice for System Development Dispute Resolution -- Handling Troubles in AI, Agile, and Package Development (Co-authored). Houritsu Bunka Sha, 2022."
     url: "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04188-3"
   - category: book
     year: 2020
-    major: true
     ja: "AIで変わる法と社会 : 近未来を深く考えるために (担当: 第7章「判決自動販売機の可能性」). 岩波書店, 2020."
     en: "Artificial Intelligence, Law, and Society (Chapter 7: The Possibility of Automated Judgment Machines). Iwanami Shoten, 2020."
     url: "https://www.iwanami.co.jp/book/b527917.html"
@@ -106,6 +107,7 @@ publications:
     major: true
     ja: "議論の研究から見た「不一致」. <em>日本科学哲学会第55回大会 ワークショップ「論理とリーズニングにおける「不一致」」</em>, 2022-12-04."
     en: "the problem of disagreement from the perspective of argumentation theory. <em>55th Annual Meeting of the Philosophy of Science Society, Japan</em>, Dec 4, 2022."
+    url: "http://pssj.info/program_ver1/program_data_ver1/55/program/program_55'.pdf"
   - category: presentation
     year: 2022
     major: true
@@ -121,6 +123,7 @@ publications:
     major: true
     ja: "「法的議論」に関する近年の研究と論点の整理. <em>2021年度日本法哲学会 学術大会・総会</em>, 2021-11-20."
     en: "Recent Studies and Issues on 'Legal Argumentation'. <em>2021 Annual Conference of Japan Association of Legal Philosophy</em>, Nov 20, 2021."
+    url: "http://www.houtetsugaku.org/_userdata//pamphlet2021.pdf"
   - category: presentation
     year: 2021
     ja: "法的議論と法の支配――D. CanaleとG. Tuzetの所説を題材に. <em>東京法哲学研究会（7月例会）</em>, 2021-07-17."
@@ -165,30 +168,37 @@ publications:
     year: 2024
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第21回)従業員の脳波情報. <em>法学セミナー</em>, 69(1), 62-72, 2024."
     en: "Law of IoB: Internet of Brains (21st) Employee Brainwave Information. <em>Hogaku Seminar</em>, 69(1), 62-72, 2024."
+    url: "https://cir.nii.ac.jp/crid/1520298510701816320?lang=ja"
   - category: misc
     year: 2023
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第19回)脳死と神経科学. <em>法学セミナー</em>, 68(11), 62-70, 2023."
     en: "Law of IoB: Internet of Brains (19th) Brain Death and Neuroscience. <em>Hogaku Seminar</em>, 68(11), 62-70, 2023."
+    url: "https://cir.nii.ac.jp/crid/1520016361134932608?lang=ja"
   - category: misc
     year: 2023
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第17回)エンハンスメント問題. <em>法学セミナー</em>, 68(9), 66-75, 2023."
     en: "Law of IoB: Internet of Brains (17th) The Enhancement Problem. <em>Hogaku Seminar</em>, 68(9), 66-75, 2023."
+    url: "https://cir.nii.ac.jp/crid/1520578625287570944?lang=ja"
   - category: misc
     year: 2023
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第15回)人工神経接続手術による運動機能再建. <em>法学セミナー</em>, 68(7), 56-64, 2023."
     en: "Law of IoB: Internet of Brains (15th) Motor Function Reconstruction via Artificial Nerve Connection Surgery. <em>Hogaku Seminar</em>, 68(7), 56-64, 2023."
+    url: "https://cir.nii.ac.jp/crid/1520296453687019136?lang=ja"
   - category: misc
     year: 2023
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第13回)出力型BMIによるドローン・レース. <em>法学セミナー</em>, 68(5), 67-76, 2023."
     en: "Law of IoB: Internet of Brains (13th) Drone Racing with Output-Type BMI. <em>Hogaku Seminar</em>, 68(5), 67-76, 2023."
+    url: "https://cir.nii.ac.jp/crid/1520295823339310720?lang=ja"
   - category: misc
     year: 2023
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第11回)神経科学の多階層性. <em>法学セミナー</em>, 68(3), 63-71, 2023."
     en: "Law of IoB: Internet of Brains (11th) The Multi-layered Nature of Neuroscience. <em>Hogaku Seminar</em>, 68(3), 63-71, 2023."
+    url: "https://cir.nii.ac.jp/crid/1520576656667341696?lang=ja"
   - category: misc
     year: 2022
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第9回)Cybernetic Beingの世界. <em>法学セミナー</em>, 67(12), 52-64, 2022."
     en: "Law of IoB: Internet of Brains (9th) The World of Cybernetic Beings. <em>Hogaku Seminar</em>, 67(12), 52-64, 2022."
+    url: "https://cir.nii.ac.jp/crid/1520012711614677120?lang=ja"
   - category: misc
     year: 2022
     ja: "スマートシティをめぐるELSI研究に向けた先行事例の調査. (共著) <em>大阪大学社会技術共創研究センター</em>, 20, 1-36, 2022."
@@ -198,7 +208,9 @@ publications:
     year: 2022
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第7回)Think Communicationとは何か?. <em>法学セミナー</em>, 67(10), 54-61, 2022."
     en: "Law of IoB: Internet of Brains (7th) What is Think Communication?. <em>Hogaku Seminar</em>, 67(10), 54-61, 2022."
+    url: "https://cir.nii.ac.jp/crid/1520012003677648896?lang=ja"
   - category: misc
     year: 2022
     ja: "Law of IoB : インターネット・オブ・ブレインズの法(第5回)思念クラウドの世界へ. <em>法学セミナー</em>, 67(8), 52-59, 2022."
     en: "Law of IoB: Internet of Brains (5th) To the World of the Thought Cloud. <em>Hogaku Seminar</em>, 67(8), 52-59, 2022."
+    url: "https://cir.nii.ac.jp/crid/1520574212777718016?lang=ja"

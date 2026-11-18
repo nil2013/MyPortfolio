@@ -57,17 +57,23 @@ experience:
     title: {ja: "九州大学 大学院法学研究院, 准教授", en: "Associate Professor, Faculty of Law, Kyushu University"}
     major: true
   - period: {ja: "2024-02 – 現在", en: "Feb 2024 – Present"}
-    title: {ja: "データサイエンス共同利用基盤施設, 客員准教授", en: "Visiting Associate Professor, Joint Support-Center for Data Science Research"}
+    title: {ja: "データサイエンス共同利用基盤施設 人工知能法学研究支援センター, 客員准教授", en: "Visiting Associate Professor, Center for Juris-Informatics, Joint Support-Center for Data Science Research"}
   - period: {ja: "2023-01 – 2024-03", en: "Jan 2023 – Mar 2024"}
     title: {ja: "理化学研究所 革新知能統合研究センター, 客員研究員", en: "Visiting Scientist, RIKEN Center for Advanced Intelligence Project"}
   - period: {ja: "2022-10 – 2025-03", en: "Oct 2022 – Mar 2025"}
     title: {ja: "大阪大学 社会技術共創研究センター, 招へい准教授", en: "Guest Associate Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"}
+  - period: {ja: "2022-04 – 2023-03", en: "Apr 2022 – Mar 2023"}
+    title: {ja: "大阪経済法科大学 法学部, 非常勤講師", en: "Part-time Lecturer, Faculty of Law, Osaka University of Economics and Law"}
+  - period: {ja: "2021-02 – 2022-09", en: "Feb 2021 – Sep 2022"}
+    title: {ja: "理化学研究所 革新知能統合研究センター, 客員研究員", en: "Visiting Scientist, RIKEN Center for Advanced Intelligence Project"}
   - period: {ja: "2020-04 – 2022-09", en: "Apr 2020 – Sep 2022"}
     title: {ja: "大阪大学 社会技術共創研究センター, 特任助教（常勤）", en: "Specially Appointed Assistant Professor, Research Center on Ethical, Legal and Social Issues, Osaka University"}
     major: true
   - period: {ja: "2019-04 – 2020-03", en: "Apr 2019 – Mar 2020"}
     title: {ja: "日本学術振興会, 特別研究員（DC2）", en: "Special Researcher (DC2), JSPS"}
     major: true
+  - period: {ja: "2018-04 – 現在", en: "Apr 2018 – Present"}
+    title: {ja: "中央大学 法学部通信教育課程, インストラクター", en: "Instructor, Distance Learning Division, Faculty of Law, Chuo University"}
 
 education:
   - period: {ja: "2017-04 – 2020-03", en: "Apr 2017 – Mar 2020"}
@@ -78,13 +84,21 @@ education:
     title: {ja: "中央大学, 法学部, 法律学科", en: "Department of Law, Faculty of Law, Chuo University"}
 
 grants:
+  - title: {ja: "情報処理技術を用いた新規な法学研究方法論の哲学的分析", en: "What Makes a Method Valid in Legal Scholarship? A Philosophical Inquiry through Computational Approaches"}
+    meta: {ja: "科研費, 2026-04–2029-03", en: "JSPS KAKENHI, Apr 2026 – Mar 2029"}
+    role: {ja: "役割: 研究代表者", en: "Role: Principal Investigator"}
+    major: true
   - title: {ja: "ニューロテクノロジーの人間中心型国際ガバナンス構築に向けた企画調査", en: "Planning Survey for Building Human-Centric International Governance of Neurotechnology"}
     meta: {ja: "JST 社会技術研究開発, 2024-10–2025-03", en: "JST RISTEX, Oct 2024 – Mar 2025"}
     role: {ja: "代表: 福士 珠美 / 役割: 研究分担者", en: "PI: Tamami Fukushi / Role: Co-Investigator"}
+    major: true
+  - title: {ja: "対話システムに対するトラスト形成阻害要因の特定および抑制技術の研究開発", en: "Identification of barriers against forming trust to conversational systems and development of control technology for them"}
+    meta: {ja: "JST 社会技術研究開発, 2024–2027", en: "JST RISTEX, 2024–2027"}
+    role: {ja: "代表: 小山 虎", en: "PI: Tora Koyama / Role: Group Leader, Law and Social Philosophy Group"}
+    major: true
   - title: {ja: "根源的規約主義に基づく新たな対話規範および社会規範とその実装の検討", en: "Study on new dialogue and social norms based on radical conventionalism and their implementation"}
     meta: {ja: "科研費, 2022-04–2024-03", en: "JSPS KAKENHI, Apr 2022 – Mar 2024"}
     role: {ja: "代表: 小山 虎 / 役割: 研究分担者", en: "PI: Tora Koyama / Role: Co-Investigator"}
-    major: true
   - title: {ja: "法的判断における論証の役割と機械による裁判官の代替可能性について", en: "On the Role of Argumentation in Legal Judgment and the Possibility of Replacing Judges with Machines"}
     meta: {ja: "科研費, 2020-09–2022-03", en: "JSPS KAKENHI, Sep 2020 – Mar 2022"}
     role: {ja: "役割: 研究代表者", en: "Role: Principal Investigator"}
@@ -108,3 +122,7 @@ contributions:
     meta: {ja: "企業法務セミナー, 講師 (2023-03-23)", en: "Corporate Legal Seminar, Lecturer (Mar 23, 2023)"}
   - title: {ja: "自動決定の「悪さ」はどこにあるかを考える", en: "Considering the 'Wrongs' of Automated Decision-Making"}
     meta: {ja: "ソニー法務グループ拡大勉強会, 講師 (2022-03-24)", en: "Sony Legal Group Workshop, Lecturer (Mar 24, 2022)"}
+
+committees:
+  - title: {ja: "AIアドバイザリーボード 委員", en: "Member, AI Advisory Board"}
+    meta: {ja: "株式会社NTTデータ, 2023-04 – 現在", en: "NTT DATA, Apr 2023 – Present"}
